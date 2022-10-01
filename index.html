@@ -17,13 +17,13 @@
     <nav class="navigation-bar">
       <img class="app-logo" src="asset/cheamco.png" alt="cheamco logo" />
       <ul class="navigation-links">
-        <li class="navigation-link"><a href="#">Section 1</a></li>
-        <li class="navigation-link"><a href="#">Section 2</a></li>
-        <li class="navigation-link"><a href="#">Section 3</a></li>
-        <li class="navigation-link"><a href="#">Section 4</a></li>
+        <li class="navigation-link"><a href="#home">Home</a></li>
+        <li class="navigation-link"><a href="#biography">Biography</a></li>
+        <li class="navigation-link"><a href="#web-projects">Web Projects</a></li>
+        <li class="navigation-link"><a href="#">Mobile Projects</a></li>
       </ul>
     </nav>
-    <article class="hero container">
+    <article class="hero container" id="home">
       <div class="grid hero-grid">
         <div class="portfolio-title-container">
           <div class="introduction">
@@ -54,7 +54,7 @@
       </div>
     </article>
   </header>
-  <section class="biography">
+  <section class="biography" id="biography">
     <div class="container">
       <h1 class="section-title">Biography & Tech Stack</h1>
       <div class="grid grid-2-cols biography-grid">
@@ -114,15 +114,131 @@
       </div>
     </div>
   </section>
-  <section class="projects">
+  <section class="projects" id="web-projects">
     <div class="container">
       <h1 class="section-title">Projects</h1>
-      <a href="https://jwt-auth-2.herokuapp.com">JWT-authentication</a>
-      <a href="https://main.d3qoqpvt11ej70.amplifyapp.com">React Weather App</a>
-      <a href="https://cheambrothers-ent.com">Full Stack Web Development</a>
-      <a href="https://socketio-chat-app-je.herokuapp.com">Socket Io Fullstack</a>
+      <div class="grid grid-2-cols projects-grid">
+        <a href="https://jwt-auth-2.herokuapp.com" class="project-link" target="_blank">
+          <div class="project-view jwt-project">
+            <img src="/asset/passport.svg" />
+            <img src="/asset/jwt.svg" />
+            <img src="/asset/google.svg" />
+            <img src="/asset/facebook.svg" />
+          </div>
+        </a>
+        <div class="project-desc">
+          <h2>JWT Authetication</h2>
+          <p>A backend application using Json Web Token as session credential. The programming language used in this
+            project is Nodejs. The library managing JWT is passport.js. The authentication methods used is Google Oauth2
+            and Facebook login. Both methods use passport's strategies, <em
+              class="passport-strategy">passport-google-oauth2</em> and
+            <em class="passport-strategy">passport-facebook</em>
+            respectively.
+          </p>
+        </div>
+        <div class="project-desc">
+          <h2>Map App</h2>
+          <p>A frontend application created using <em>React.js</em>. This app displays the current USA state weather and
+            the
+            images
+            related to the state. The data serves in the frontend is obtained via three different apis which is
+            <em>geolocation by Rapid Api</em>, <em>OpenWeather Api</em> and <em>Unsplash Api</em>.
+          </p>
+        </div>
+        <a href="https://main.d3qoqpvt11ej70.amplifyapp.com" target="_blank" class="project-link">
+          <div class="project-view" id="map-app">
+            <img src="/asset/projects/map-app/landing.png" />
+          </div>
+        </a>
+        <a href="https://socketio-chat-app-je.herokuapp.com" target="_blank" class="project-link">
+          <div class="project-view" id="chat-app">
+            <img src="/asset/projects/chat-app/landing.png" />
+          </div>
+        </a>
+        <div class="project-desc">
+          <h2>Chat App</h2>
+          <p>A fullstack application developed using MERN stack. This application implements web socket protocal with
+            <em>Socket.io</em> library. It has basic authentication steps and after login in, user can send message to
+            other users.
+          </p>
+        </div>
+        <div class="project-desc">
+          <h2>HR App</h2>
+          <p>A fullstack application developed using MERN stack. This app is production ready app and have its own
+            domain. The app is served on AWS lightsail with its remote server.
+          </p>
+        </div>
+        <a href="https://cheambrothers-ent.com" target="_blank" class="project-link">
+          <div class="project-view" id="cbe">
+            <img src="/asset/projects/full-stack/login.png" />
+          </div>
+        </a>
+      </div>
     </div>
   </section>
+  <section class="projects" id="mobile-projects">
+    <div class="container">
+      <h1 class="section-title">Mobile Projects</h1>
+      <div class="grid grid-2-cols projects-grid">
+        <a href="https://jwt-auth-2.herokuapp.com" class="project-link" target="_blank">
+          <div class="project-view jwt-project">
+            <img src="/asset/passport.svg" />
+            <img src="/asset/jwt.svg" />
+            <img src="/asset/google.svg" />
+            <img src="/asset/facebook.svg" />
+          </div>
+        </a>
+        <div class="project-desc">
+          <h2>JWT Authetication</h2>
+          <p>A backend application using Json Web Token as session credential. The programming language used in this
+            project is Nodejs. The library managing JWT is passport.js. The authentication methods used is Google Oauth2
+            and Facebook login. Both methods use passport's strategies, <em
+              class="passport-strategy">passport-google-oauth2</em> and
+            <em class="passport-strategy">passport-facebook</em>
+            respectively.
+          </p>
+        </div>
+        <div class="project-desc">
+          <h2>Map App</h2>
+          <p>A frontend application created using <em>React.js</em>. This app displays the current USA state weather and
+            the
+            images
+            related to the state. The data serves in the frontend is obtained via three different apis which is
+            <em>geolocation by Rapid Api</em>, <em>OpenWeather Api</em> and <em>Unsplash Api</em>.
+          </p>
+        </div>
+        <a href="https://main.d3qoqpvt11ej70.amplifyapp.com" target="_blank" class="project-link">
+          <div class="project-view" id="map-app">
+            <img src="/asset/projects/map-app/landing.png" />
+          </div>
+        </a>
+        <a href="https://socketio-chat-app-je.herokuapp.com" target="_blank" class="project-link">
+          <div class="project-view" id="chat-app">
+            <img src="/asset/projects/chat-app/landing.png" />
+          </div>
+        </a>
+        <div class="project-desc">
+          <h2>Chat App</h2>
+          <p>A fullstack application developed using MERN stack. This application implements web socket protocal with
+            <em>Socket.io</em> library. It has basic authentication steps and after login in, user can send message to
+            other users.
+          </p>
+        </div>
+        <div class="project-desc">
+          <h2>HR App</h2>
+          <p>A fullstack application developed using MERN stack. This app is production ready app and have its own
+            domain. The app is served on AWS lightsail with its remote server.
+          </p>
+        </div>
+        <a href="https://cheambrothers-ent.com" target="_blank" class="project-link">
+          <div class="project-view" id="cbe">
+            <img src="/asset/projects/full-stack/login.png" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <script src="/index.js"></script>
 </body>
 
 </html>
