@@ -20,7 +20,7 @@
         <li class="navigation-link"><a href="#home">Home</a></li>
         <li class="navigation-link"><a href="#biography">Biography</a></li>
         <li class="navigation-link"><a href="#web-projects">Web Projects</a></li>
-        <li class="navigation-link"><a href="#">Mobile Projects</a></li>
+        <li class="navigation-link"><a href="#mobile-projects">Mobile Projects</a></li>
       </ul>
     </nav>
     <article class="hero container" id="home">
@@ -39,18 +39,19 @@
             <h4>
               Penang, Malaysia
             </h4>
-            <a class="btn btn-primary" href="#">Hire Me</a>
+            <a class="btn btn-primary" href="asset/JE-CV.pdf" download>Hire Me</a>
           </div>
         </div>
-        <div class="portfolio-image-container">
-          <img class="portfolio-image" src="asset/je.png" />
-          <div class="github-card">
-            <img class="github-img" src="asset/github.png" />
-            <p class="github-nickname">Jec</p>
-            <p class="github-username">jingen11</p>
+        <a href="https://github.com/jingen11" target="_blank">
+          <div class="portfolio-image-container">
+            <img class="portfolio-image" src="asset/je.png" />
+            <div class="github-card">
+              <img class="github-img" src="asset/github.png" />
+              <p class="github-nickname">Jec</p>
+              <p class="github-username">jingen11</p>
+            </div>
           </div>
-        </div>
-
+        </a>
       </div>
     </article>
   </header>
@@ -180,64 +181,69 @@
     <div class="container">
       <h1 class="section-title">Mobile Projects</h1>
       <div class="grid grid-2-cols projects-grid">
-        <a href="https://jwt-auth-2.herokuapp.com" class="project-link" target="_blank">
-          <div class="project-view jwt-project">
-            <img src="/asset/passport.svg" />
-            <img src="/asset/jwt.svg" />
-            <img src="/asset/google.svg" />
-            <img src="/asset/facebook.svg" />
+        <a href="https://play.google.com/store/apps/details?id=com.fmcbms&hl=en&gl=US"
+          class="project-link mobile-project-link" target="_blank">
+          <div class="project-view mobile-project-view">
+            <img src="/asset/bloc.png" />
+            <img src="/asset/socket.svg" />
+            <img src="/asset/techstack/firebase.svg" />
+            <img src="/asset/apn.png" />
           </div>
         </a>
         <div class="project-desc">
-          <h2>JWT Authetication</h2>
-          <p>A backend application using Json Web Token as session credential. The programming language used in this
-            project is Nodejs. The library managing JWT is passport.js. The authentication methods used is Google Oauth2
-            and Facebook login. Both methods use passport's strategies, <em
-              class="passport-strategy">passport-google-oauth2</em> and
-            <em class="passport-strategy">passport-facebook</em>
-            respectively.
+          <h2>FMC BMS</h2>
+          <p>Current company project. Due to NDA, the description of the app is not available. Built the application
+            using <em>Flutter</em> from scratch. Have gone through the phase of migrating the code to Flutter 2.12 (null
+            safety).
+            State management using <em>Flutter Bloc</em>.
+            Implemented <em>Socket.io</em> and Api integration in the app. Implemented push notification for both
+            Android and IOS via <em>Firebase</em> and <em>APN</em>. The app is capable of receiving <em>Callkit</em>
+            notification for IOS platform. Checkout the app at <a
+              href="https://play.google.com/store/apps/details?id=com.fmcbms&hl=en&gl=US" target="_blank"
+              class="mobile-app-link">Google
+              Playstore</a> and <a href="https://apps.apple.com/my/app/fmc-bms/id1481682000" target="_blank"
+              class="mobile-app-link">Apple
+              Appstore</a>.
           </p>
         </div>
         <div class="project-desc">
-          <h2>Map App</h2>
-          <p>A frontend application created using <em>React.js</em>. This app displays the current USA state weather and
-            the
-            images
-            related to the state. The data serves in the frontend is obtained via three different apis which is
-            <em>geolocation by Rapid Api</em>, <em>OpenWeather Api</em> and <em>Unsplash Api</em>.
+          <h2>Big A</h2>
+          <p> A grocery app for client's grocery shop. The app is shipped in two mode, the admin and the consumer apps.
+            Admin app is used to manage the items in the server. Consumer apps is used to browse the store items and the
+            items can be added to cart and then they are delivered to the consumer. There is no backend involved in this
+            project as this project uses <em>Firebase</em>. Firebase technologies involved in this project are
+            Authentication, Cloud Firestore, Storage, Cloud Functions, FCM and Web Hosting. For Authentication, consumer
+            can login via Google Sign In, Apple Sign In or Facebook Login. Implemented Google Maps api on the app. While
+            the customer app is
+            available
+            in both <a href="https://apps.apple.com/my/app/big-a/id1595751349" target="_blank"
+              class="mobile-app-link">IOS</a> and
+            <a href="https://play.google.com/store/apps/details?id=com.cheamco.bigA" target="_blank"
+              class="mobile-app-link">Android</a> platform, admin app only available in <a
+              href="https://play.google.com/store/apps/details?id=com.cheamco.bigAAdmin" target="_blank"
+              class="mobile-app-link">Playstore</a>.
           </p>
         </div>
-        <a href="https://main.d3qoqpvt11ej70.amplifyapp.com" target="_blank" class="project-link">
-          <div class="project-view" id="map-app">
-            <img src="/asset/projects/map-app/landing.png" />
-          </div>
-        </a>
-        <a href="https://socketio-chat-app-je.herokuapp.com" target="_blank" class="project-link">
-          <div class="project-view" id="chat-app">
-            <img src="/asset/projects/chat-app/landing.png" />
-          </div>
-        </a>
-        <div class="project-desc">
-          <h2>Chat App</h2>
-          <p>A fullstack application developed using MERN stack. This application implements web socket protocal with
-            <em>Socket.io</em> library. It has basic authentication steps and after login in, user can send message to
-            other users.
-          </p>
-        </div>
-        <div class="project-desc">
-          <h2>HR App</h2>
-          <p>A fullstack application developed using MERN stack. This app is production ready app and have its own
-            domain. The app is served on AWS lightsail with its remote server.
-          </p>
-        </div>
-        <a href="https://cheambrothers-ent.com" target="_blank" class="project-link">
-          <div class="project-view" id="cbe">
-            <img src="/asset/projects/full-stack/login.png" />
+        <a href="https://play.google.com/store/apps/details?id=com.fmcbms&hl=en&gl=US"
+          class="project-link mobile-project-link" target="_blank">
+          <div class="project-view mobile-project-view">
+            <img src="/asset/bloc.png" />
+            <img src="/asset/techstack/firebase.svg" />
+            <img src="/asset/google-maps.svg" />
           </div>
         </a>
       </div>
     </div>
   </section>
+  <footer>
+    <div class="container footer">
+      <img class="app-logo-lg" src="asset/cheamco.png" alt="cheamco logo" />
+      <h1>JE-DEV</h1>
+      <p>Email: jingen11@hotmail.com</p>
+      <p>Phone Number: 012-5138019</p>
+      <h6>&copy; Copyright 2022</h6>
+    </div>
+  </footer>
   <script src="/index.js"></script>
 </body>
 
