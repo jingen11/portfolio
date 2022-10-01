@@ -204,7 +204,6 @@ img.portfolio-image {
 
 .github-card:hover {
   transform: translateY(-0.2rem);
-
   box-shadow: 0 4.8rem 5.6rem #D9E1E6;
   transition: all 0.4s;
 }
@@ -322,7 +321,6 @@ p.github-username {
   transform: scale(1.03);
 }
 
-
 .project-view {
   margin: 1.2rem;
   aspect-ratio: 16/9;
@@ -331,6 +329,7 @@ p.github-username {
   transition: all 0.2s;
   display: flex;
   justify-content: center;
+  align-self: center;
 }
 
 .project-view:hover {
@@ -359,6 +358,10 @@ p.github-username {
   padding: 0.8rem 1.6rem;
   align-self: center;
   text-align: justify;
+}
+
+.project-desc p {
+  margin-bottom: 1.2rem;
 }
 
 .projects em {
@@ -413,4 +416,138 @@ footer {
 .footer h6 {
   padding-top: 1.2rem;
   font-size: 1.2rem;
+}
+
+@media (max-width: 1250px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    padding-top: 5.6rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    padding-top: 5.6rem;
+  }
+
+  .github-card::after {
+    bottom: -4.5rem;
+    right: -11.8rem;
+    transform: rotate(-45deg) scale(0.38);
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .hero {
+    padding-top: 5.6rem;
+  }
+
+  .github-card::after {
+    bottom: -5.9rem;
+    right: -13.4rem;
+    transform: rotate(-45deg) scale(0.3);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 5.6rem;
+  }
+
+  .container {
+    padding: 0 6.4rem;
+  }
+
+  .github-card {
+    width: 30%;
+  }
+
+  .biography-grid {
+    grid-template-columns: 1fr;
+    row-gap: 1.2rem;
+  }
+
+  .biography-content {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 31.25%;
+  }
+
+  .hero {
+    padding-top: 5.6rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 2fr 3fr;
+    gap: 4rem;
+  }
+
+  .github-card::after {
+    bottom: -6.9rem;
+    right: -14.4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    padding-top: 5.6rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-title-container {
+    justify-content: center;
+  }
+
+  .portfolio-image-container {
+    justify-self: center;
+    align-self: center;
+    width: 60%;
+    padding-bottom: 60%;
+  }
+
+  .github-card::after {
+    transform: rotate(-45deg) scale(0.26);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    row-gap: 1.2rem;
+  }
+
+  .project-view.mobile-project-view {
+    width: 30%;
+  }
+
+  .project-desc:nth-of-type(2) {
+    grid-row-start: 4;
+  }
+
+  .project-desc:nth-of-type(4) {
+    grid-row-start: 8;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio-image-container {
+    width: 90%;
+    padding-bottom: 90%;
+  }
 }
