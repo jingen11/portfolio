@@ -237,6 +237,7 @@ p.github-username {
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 2.4rem;
+  text-align: justify;
 }
 
 .techstack {
@@ -261,6 +262,7 @@ p.github-username {
   height: 5.6rem;
   filter: grayscale(100%);
   opacity: 70%;
+  transition: all 0.3s;
 }
 
 .techstack-name {
@@ -279,6 +281,11 @@ p.github-username {
 
 .techstack-img-container:hover .techstack-name {
   visibility: visible;
+}
+
+.techstack-img-container:hover .techstack-img {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 /* Projects Section*/
